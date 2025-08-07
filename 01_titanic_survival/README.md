@@ -20,12 +20,11 @@ From [Kaggle Titanic Challenge](https://www.kaggle.com/competitions/titanic)
 Install using:
 ```bash
 pip install -r requirements.txt
+```
 
 
 
 
-
----
 
 # 🛳️ Titanic Classification Project
 
