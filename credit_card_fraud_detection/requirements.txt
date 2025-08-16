@@ -1,7 +1,8 @@
-numpy
 pandas
+numpy
+scikit-learn
+xgboost
 matplotlib
 seaborn
-scikit-learn
-xg-boost
+joblib
 imbalanced-learn
