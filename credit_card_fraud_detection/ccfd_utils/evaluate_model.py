@@ -1,6 +1,6 @@
 import pandas as pd
 import joblib
-from ccfd_utils.preprocessing import load_data, preprocess_data
+from preprocessing import load_data, preprocess_data
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 
 def evaluate_model(model, X_test, y_test):
@@ -22,11 +22,11 @@ def load_and_evaluate_models(model_paths, X_test, y_test):
 
 if __name__ == "__main__":
     # Load and preprocess the data
-    df = load_data("../data/creditcard.csv")
+    df = load_data("data/creditcard.csv")
     X_train, X_test, y_train, y_test = preprocess_data(df)
 
     # Define model paths
-    model_paths = ["../models/random_forest.pkl", "../models/xgboost_best.pkl"]
+    model_paths = ["models/xgboost_best.pkl"]
 
     # Load and evaluate models
     load_and_evaluate_models(model_paths, X_test, y_test)
