@@ -1,0 +1,9 @@
+# Ignore raw data
+data/
+
+# Ignore python cache
+__pycache__/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
