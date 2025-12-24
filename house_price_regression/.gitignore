@@ -1,9 +1,23 @@
-# Ignore raw data
-data/
+# Ignore raw datasets
+/data/train.csv
+/data/test.csv
 
-# Ignore python cache
+# Allow reference files
+!/data/sample_submission.csv
+!/data/data_description.txt
+
+# Python cache
 __pycache__/
+*.pyc
 
-# Ignore Jupyter notebook checkpoints
+# Jupyter checkpoints
 .ipynb_checkpoints/
 
+# Environment files
+.env
+.venv
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
